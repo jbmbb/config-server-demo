@@ -1,5 +1,5 @@
 server:
-  port: 8580
+  port: 8581
 spring:
   application:
     name: config-server
@@ -12,10 +12,10 @@ spring:
           username:  
           password: 
 
-#eureka:
-#  client:
-#    service-url:
-#      defaultZone: http://localhost:8888/eureka/    #注册 中心已经开启认证
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8888/eureka/    #注册 中心已经开启认证
 #  instance:
 #    prefer-ip-address: true
 #    instance-id: ${spring.application.name}:${spring.application.instance-id:${server.port}}
